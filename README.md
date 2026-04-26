@@ -19,7 +19,7 @@ This starts two services — the Rails app on port `3000` and a PostgreSQL 16 da
 **Open the app:**
 
 ```
-http://localhost:3000
+http://localhost
 ```
 
 **Stop the stack:**
@@ -32,7 +32,7 @@ docker compose down
 
 | Service | Image / Runtime | Port |
 |---------|----------------|------|
-| app | Ruby 3.3.6 / Rails 7.2 | 3000 |
+| app | Ruby 3.3.6 / Rails 7.2 | 80 |
 | db | PostgreSQL 16 | 5432 |
 
 > The database does not persist between `docker compose down` / `up` cycles by default. To enable persistence, uncomment the `volumes` block in `compose.yml`.
